@@ -46,7 +46,7 @@ function creatRecomand() {
         if (2000 <= foodCode[i].price && foodCode[i].price <= 4200) {
             let createDiv = document.createElement('div');
             createDiv.innerHTML = `
-                <img src="./img2/${foodCode[i].imgNum}.png" class="card-img-top" alt="이미지없음">
+                <img src="./img/${foodCode[i].imgNum}.png" class="card-img-top" alt="이미지없음">
                 <div class="card-body" data="${foodCode[i].sort}" >
                     <p class="card-title">${foodCode[i].foodName}</p>
                     <p class="card-text">${foodCode[i].price.toLocaleString()}</p>
@@ -78,7 +78,7 @@ function creatBurger() {
         if (foodCode[i].sort == "burger") {
             let createDiv = document.createElement('div');
             createDiv.innerHTML = `
-                <img src="./img2/${foodCode[i].imgNum}.png" class="card-img-top" alt="이미지없음">
+                <img src="./img/${foodCode[i].imgNum}.png" class="card-img-top" alt="이미지없음">
                 <div class="card-body" data="${foodCode[i].sort}">
                     <p class="card-title">${foodCode[i].foodName}</p>
                     <p class="card-text">${foodCode[i].price.toLocaleString()}</p>
@@ -110,7 +110,7 @@ function creatSide1() {
         if (foodCode[i].sort == "side1") {
             let createDiv = document.createElement('div');
             createDiv.innerHTML = `
-                <img src="./img2/${foodCode[i].imgNum}.png" class="card-img-top" alt="이미지없음">
+                <img src="./img/${foodCode[i].imgNum}.png" class="card-img-top" alt="이미지없음">
                 <div class="card-body" data="${foodCode[i].sort}">
                     <p class="card-title">${foodCode[i].foodName}</p>
                     <p class="card-text">${foodCode[i].price.toLocaleString()}</p>
@@ -140,7 +140,7 @@ function creatSide2() {
         if (foodCode[i].sort == "side2") {
             let createDiv = document.createElement('div');
             createDiv.innerHTML = `
-                <img src="./img2/${foodCode[i].imgNum}.png" class="card-img-top" alt="이미지없음">
+                <img src="./img/${foodCode[i].imgNum}.png" class="card-img-top" alt="이미지없음">
                 <div class="card-body" data="${foodCode[i].sort}">
                     <p class="card-title">${foodCode[i].foodName}</p>
                     <p class="card-text">${foodCode[i].price.toLocaleString()}</p>
@@ -277,7 +277,7 @@ function sideOpen(cardTitle, cardPrice) {
         if (foodCode[i].sort == "side1") {
             let createDiv = document.createElement('div');
             createDiv.innerHTML = `
-            <img src="./img2/${foodCode[i].imgNum}.png" class="card-img-top" alt="이미지없음">
+            <img src="./img/${foodCode[i].imgNum}.png" class="card-img-top" alt="이미지없음">
             <div class="card-body" data="${foodCode[i].sort}" >
                 <p class="card-title">${foodCode[i].foodName}</p>
                 <p class="card-text1">+ ${(foodCode[i].price - 1500).toLocaleString()}</p>
@@ -301,7 +301,7 @@ function sideOpen(cardTitle, cardPrice) {
             if (foodCode[i].sort == "side2") {
                 let createDiv = document.createElement('div');
                 createDiv.innerHTML = `
-                <img src="./img2/${foodCode[i].imgNum}.png" class="card-img-top" alt="이미지없음">
+                <img src="./img/${foodCode[i].imgNum}.png" class="card-img-top" alt="이미지없음">
                 <div class="card-body" data="${foodCode[i].sort}" >
                     <p class="card-title">${foodCode[i].foodName}</p>
                     <p class="card-text2">+ ${(foodCode[i].price - 1700).toLocaleString()}</p>
@@ -490,7 +490,7 @@ function goindex4(allPriceNext) {
         let rightContentBtn = mainContent4.querySelectorAll('.right-cotent-btn');
         rightContentUpper[0].style = "background-color:#ff4b4b";
         rightContentBtn[0].style = "opacity:100%";
-        rightContentBtn[1].style = "opacity:100%";
+        rightContentBtn[1].style = "opacity:20%";
 
         for(i = 1; i < rightContentUpper.length; i++){
             rightContentUpper[i].style = "background-color:gray";
@@ -506,8 +506,8 @@ function goindex4(allPriceNext) {
             rightContentUpper[1].style = "background-color:#ff4b4b";
             rightContentBtn[0].style = "opacity:20%";
             rightContentBtn[1].style = "opacity:20%";
-            rightContentBtn[2].style = "opacity:100%";
-            rightContentBtn[3].style = "opacity:100%";
+            rightContentBtn[2].style = "opacity:20%";
+            rightContentBtn[3].style = "opacity:20%";
             rightContentBtn[4].style = "opacity:100%";
             firstStep = true;
             rightContentBtn[4].disabled = false;
@@ -523,8 +523,8 @@ function goindex4(allPriceNext) {
                 rightContentBtn[3].style = "opacity:20%";
                 rightContentBtn[4].style = "opacity:20%";
                 rightContentBtn[5].style = "opacity:100%";
-                rightContentBtn[6].style = "opacity:100%";
-                rightContentBtn[7].style = "opacity:100%";
+                rightContentBtn[6].style = "opacity:20%";
+                rightContentBtn[7].style = "opacity:20%";
                 secondStep = true;
                 rightContentBtn[7].disabled = false;
 

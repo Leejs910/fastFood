@@ -350,6 +350,7 @@ body {
   background-position-y: bottom;
   background-blend-mode: multiply;
   color: rgba(0, 0, 0, 0);
+  opacity: 20%;
 }
 @media (max-width: 1080px) {
   .container-fluid .main-content2 .btnB_wrap .btn2 .card_img {
